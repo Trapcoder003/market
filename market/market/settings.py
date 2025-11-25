@@ -68,7 +68,13 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'market.wsgi.application'
+
+ALLOWED_HOSTS = [
+    '.onrender.com',     # Allows ANY Render subdomain
+    'ecommerce-6-4qzv.onrender.com', 
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Database
